@@ -1,0 +1,62 @@
+/* Global App Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #EEF0EC;
+  min-height: 100vh;
+}
+
+code {
+  font-family: 'IBM Plex Mono', Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EEF0EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9CCC2;
+  border-radius: 0;
+  border: 2px solid #EEF0EC;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9DA296;
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-color: #C9CCC2 #EEF0EC;
+  scrollbar-width: thin;
+}

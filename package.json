@@ -1,0 +1,26 @@
+{
+  "name": "kanban-board-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Advanced Kanban Board with drag-and-drop, task management, and team collaboration",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "oxlint"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.7",
+    "oxlint": "^0.2.14"
+  }
+}
