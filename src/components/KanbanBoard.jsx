@@ -124,7 +124,6 @@ const KanbanBoard = () => {
     { id: 'done', title: 'Completed', icon: '04' },
   ]
 
-  // Filter tasks based on search and priority
   const filterTasks = (columnTasks) => {
     return columnTasks.filter((task) => {
       const matchesSearch =
@@ -135,7 +134,6 @@ const KanbanBoard = () => {
     })
   }
 
-  // Drag handlers
   const handleDragStart = (e, task, sourceColumn) => {
     setDraggedTask({ task, sourceColumn })
     e.dataTransfer.effectAllowed = 'move'
@@ -162,7 +160,6 @@ const KanbanBoard = () => {
     setDraggedTask(null)
   }
 
-  // Task management
   const addTask = (columnId) => {
     const title = newTaskInputs[columnId].trim()
     if (!title) return
@@ -271,7 +268,7 @@ const KanbanBoard = () => {
           </div>
         </div>
 
-        {/* Board */}
+
         <div className="board">
           {columns.map((column) => {
             const filteredTasks = filterTasks(tasks[column.id])
